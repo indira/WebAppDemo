@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+<welcome-file-list>
+ 	<welcome-file>index.html</welcome-file>
+ </welcome-file-list>
+<servlet>
+ 	<servlet-name>insert</servlet-name>
+ 	<servlet-class>com.indira.InsertServlet</servlet-class>
+ 	</servlet>
+ <servlet-mapping>
+ 	<servlet-name>insert</servlet-name>
+ 	<url-pattern>/insert</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+	 <servlet-name>update</servlet-name>
+	 <servlet-class>com.indira.UpdateServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+	 <servlet-name>update</servlet-name>
+	 <url-pattern>/update</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+	 <servlet-name>delete</servlet-name>
+	 <servlet-class>com.indira.DeleteServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+	 <servlet-name>delete</servlet-name>
+	 <url-pattern>/delete</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+	 <servlet-name>select</servlet-name>
+	 <servlet-class>com.indira.SelectServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+	 <servlet-name>select</servlet-name>
+	 <url-pattern>/select</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>selectall</servlet-name>
+ <servlet-class>com.indira.SelectAllServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>selectall</servlet-name>
+ <url-pattern>/all</url-pattern>
+ </servlet-mapping>
+ 
+</web-app>
